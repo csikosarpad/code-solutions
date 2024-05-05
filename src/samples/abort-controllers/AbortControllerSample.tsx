@@ -58,7 +58,7 @@ const AbortControllerSample = () => {
             {notLoaded && <span><br />Nem betöltött postID-k: [{notLoaded.toString()}]</span>}
             {error && <span><br />{error.toString()}</span>}
             <br />
-            <button disabled={isLoading} onClick={onClickHandler}>Next</button>
+            <button onClick={onClickHandler}>Next</button>
         </div>
     )
 }
