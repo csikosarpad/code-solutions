@@ -1,3 +1,11 @@
+:root {
+  --info-color: #0f0;
+  --warning-color: rgb(255, 166, 0);
+  --error-color: #f00;
+  --default-color: #000;
+  --alpha: .5;
+  --contrast-text-color: #fff;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +47,29 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.tutorial-shorts {
+
+  min-width: 500px;
+
+  p {
+    padding: 3px 5px;    
+  }
+
+  .info {
+    color: var(--info-color);
+  }
+  .warning {
+    color: var(--warning-color);
+  }
+  .error {
+    color: var(--error-color);
+  }
+
+  .post {
+    background-color: rgba(0, 0, 0, var(--alpha));
+    color: var(--contrast-text-color);
+  }
+
 }

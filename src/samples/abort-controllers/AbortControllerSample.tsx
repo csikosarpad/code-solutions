@@ -54,10 +54,9 @@ const AbortControllerSample = () => {
     return (
         <div className="tutorial-shorts">
             {isLoading && <span>Loading...</span>}
-            {post && <span>{post.title} - {post.id}</span>}
-            {notLoaded && <span><br />Nem betöltött postID-k: [{notLoaded.toString()}]</span>}
-            {error && <span><br />{error.toString()}</span>}
-            <br />
+            {post && <div>ID [{post.id}]<p className="post">{post.title}</p></div>}
+            {notLoaded && <p className="warning notloaded">Unloaded postIDs: [{notLoaded.toString()}]</p>}
+            {error && <p className="error"><br />{error.toString()}</p>}
             <button onClick={onClickHandler}>Next</button>
         </div>
     )
