@@ -26,8 +26,12 @@
   },
   "homepage": "https://github.com/csikosarpad/code-solutions#readme",
   "dependencies": {
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -41,5 +45,4 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   }
-
 }
