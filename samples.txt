@@ -1,0 +1,15 @@
+interview samples:
+
+which is better?
+
+const user = await GetUserFromDatabase();
+const orders = await GetOrdersFromAPI();
+const notifications = await GetUserNotifications();
+
+
+const (user, orders, notifications) = await Process.all(
+  GetUserFromDatabase(),
+  GetOrdersFromAPI(),
+  GetUserNotifications()
+)
+
